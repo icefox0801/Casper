@@ -1084,7 +1084,7 @@ body:not(.post-template) .post-title {
    text column to break out. */
 .post-content img {
     display: block;
-    max-width: 126%;
+    max-width: 100%;
     height: auto;
     padding: 0.6em 0;
     /* Centers an image by (1) pushing its left edge to the
@@ -1602,6 +1602,22 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
+.record p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .record {
+        clear: both;
+        padding-top: 0;
+    }
+
+    .record p {
+        border-top: 1px solid #eee;
+        padding-top: 0;
+    }
+}
 
 /* ==========================================================================
    11. Media Queries - Smaller than 900px
