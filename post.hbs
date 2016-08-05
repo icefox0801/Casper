@@ -22,7 +22,8 @@
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
-                <a href="{{url}}#disqus_thread">评论</a>
+                <!-- <a href="{{url}}#disqus_thread">评论</a> -->
+		<a href="{{url}}#ds-thread"><span class="ds-thread-count" data-thread-key="{{id}}" data-count-type="comments">评论</span></a>
             </section>
         </header>
 
@@ -74,7 +75,7 @@
             </section>
 
         </footer>
-        <div id="disqus_thread"></div>
+        <!-- <div id="disqus_thread"></div>
         <script type="text/javascript">
             var disqus_shortname = 'flybyte'; // required: replace example with your forum shortname
             var disqus_identifier = '{{post.id}}';
@@ -87,7 +88,10 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="{{id}}" data-title="{{title}}" data-url="{{@blog.url}}{{url}}"></div>
+        <!-- 多说评论框 end -->
     </article>
 </main>
 

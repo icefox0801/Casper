@@ -17,7 +17,8 @@
         {{author}}
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
         {{tags prefix=" on "}}
-        <a href="{{url}}#disqus_thread">评论</a>
+        <!-- <a href="{{url}}#disqus_thread">评论</a> -->
+        <a href="{{url}}#ds-thread"><span class="ds-thread-count" data-thread-key="{{id}}" data-count-type="comments">评论</span></a>
     </footer>
 </article>
 {{/foreach}}

@@ -1,4 +1,7 @@
 {
   "name": "Casper",
-  "version": "1.2.8"
+  "version": "1.2.8",
+  "dependencies": {
+    "highlightjs-line-numbers.js": "^1.1.0"
+  }
 }
